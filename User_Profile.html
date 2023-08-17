@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="User_Naviigation.css">
+
+<title>Create Account</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .container input,
+  .container select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 15px;
+  }
+
+  .container select {
+    width: 97%;
+  }
+  
+  .container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  .nav-container {
+  position: fixed;
+  top: 0;
+
+}
+
+
+</style>
+</head>
+<body>
+  <div class="nav-container">
+
+    <a class="button" href="User_SendMoney.html">Send Money</a>
+    <a class="button" href="User_ViewTransaction.html">View Transaction History</a>
+    <a class="button" href="User_CheckBalance.html">Check Balance</a>
+    <a class="button" href="User_Profile.html">Update Profile</a>
+    <a class="button" href="User_ChangePassword.html">Change Password</a>
+    <a class="button" href="User_Contact.html">Contact Us</a>
+    <a class="button" href="Login.html">Logout</a>
+  </div>
+  <div class="container">
+
+    <h2>Profile</h2>
+    <form action="#" method="post">
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" id="accountNumber" name="accountNumber" placeholder="Auto-Fetched" disabled>
+      
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      
+      <label for="accountType">Account Type:</label>
+      <select id="accountType" name="accountType" required>
+        <option value="savings">Savings Account</option>
+        <option value="checking">Current Account</option>
+      </select>
+      
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</body>
+</html>

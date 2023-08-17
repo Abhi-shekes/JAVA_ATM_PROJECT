@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Admin_Navigation.css">
+
+<title>Customer Support</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  .nav-container{
+    top: 0;
+    position: fixed;
+  }
+
+</style>
+</head>
+<body>
+  <div class="nav-container">
+    <a class="button" href="Admin_CreateAccount.html">Add Customer</a>
+      <a class="button" href="Admin_ManageUser.html">Manage Customers</a>
+      <a class="button" href="Admin_TransactionHistory.html">View Transaction History</a>
+      <a class="button" href="Admin_CustomerSupport.html">Customer Support</a>
+      <a class="button" href="Login.html">Logout</a>
+    </div>
+  <div class="container">
+    <h2>Customer Support</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>Account Issue</td>
+            <td>Having trouble accessing my account.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

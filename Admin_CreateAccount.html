@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Admin_Navigation.css">
+
+<title>Create Account</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .container input,
+  .container select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 15px;
+  }
+
+  .container select {
+    width: 97%;
+  }
+  
+  .container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .nav-container {
+  position: fixed;
+  top: 0;
+
+}
+  .container button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <div class="nav-container">
+    <a class="button" href="Admin_CreateAccount.html">Add Customer</a>
+      <a class="button" href="Admin_ManageUser.html">Manage Customers</a>
+      <a class="button" href="Admin_TransactionHistory.html">View Transaction History</a>
+      <a class="button" href="Admin_CustomerSupport.html">Customer Support</a>
+      <a class="button" href="Login.html">Logout</a>
+    </div>
+
+  <div class="container">
+    <h2>Create Bank Account</h2>
+    <form action="#" method="post">
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" id="accountNumber" name="accountNumber" placeholder="Auto-generated" disabled>
+      
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <label for="accountType">Account Type:</label>
+      <select id="accountType" name="accountType" required>
+        <option value="savings">Savings Account</option>
+        <option value="checking">Current Account</option>
+      </select>
+      
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</body>
+</html>

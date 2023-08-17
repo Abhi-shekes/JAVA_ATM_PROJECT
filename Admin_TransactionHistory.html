@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Admin_Navigation.css">
+<title>View Transaction History</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10%;
+
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .container input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  #navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  .nav-container{
+    top: 0;
+    position: fixed;
+  }
+</style>
+</head>
+<body>
+  <div class="nav-container">
+    <a class="button" href="Admin_CreateAccount.html">Add Customer</a>
+      <a class="button" href="Admin_ManageUser.html">Manage Customers</a>
+      <a class="button" href="Admin_TransactionHistory.html">View Transaction History</a>
+      <a class="button" href="Admin_CustomerSupport.html">Customer Support</a>
+      <a class="button" href="Login.html">Logout</a>
+    </div>
+
+  <div class="container">
+    <h2>View Transaction History</h2>
+    <form action="#" method="post">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+      
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" id="accountNumber" name="accountNumber" required>
+      
+      <button type="submit">View History</button>
+    </form>
+  </div>
+</body>
+</html>
